@@ -10,21 +10,13 @@ The South Tyrol Air Quality Monitor is a graphical HTML/JS frontend which displa
 + [Tomcat](http://tomcat.apache.org/) - An open source implementation of the Java Servlet, JavaServer Pages, Java Expression Language and Java WebSocket technologies
 
 
-## <a name="2"></a> Structure of the Development Environment
+## <a name="2"></a> Structure of the Backend Server Environment
 
-+ `/builds` - contains the development and production builds of the application
-+ `/docs` - contains the documentation
-+ `/node_modules` - contains all the dependencies of the project and the build tool
-+ `/src` - contains the source code of the application
-+ .gitignore - contains all files which should be ignored by the version management system
-+ gulpfile.js - contains all build steps
-+ package.json - contains the definition of this project with descriptive metadata as well as a list of all it's dependencies
++ `/ims.unibz.cron` - contains the scheduler classes for the automatic update of the database
++ `/ims.unibz.db` - contains the database classes (CRUD) and the the two main objects of the project (Stations and Substance)
++ `/ims.unibz.ini` - contains all the external configuraton files of the project
++ `/ims.unibz.json` - contains the JSON classes for the JSON management of data exchange
++ `/ims.unibz.rest` - contains the classes for the REST server part
++ `/web` - contains the source code of the admin page application
 
-## <a name="3"></a> The Source Code Folder
 
-The source code folder is structured as follows:
-
-+ `/img` - contains image assets
-+ `/js` - contains all JS assets
-+ `/less` - contains all Less stylesheets (Bootstrap-based and custom ones)
-+ `index.html` - The "one page" of our one page appli
